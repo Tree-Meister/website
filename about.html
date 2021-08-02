@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Tree Meister Designs - Home</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script> 
+    <script src="js/jquery-ui.js"></script>
+</head>
+<body>
+
+    <nav class=desktop-nav>
+        <div class=nav-container>
+            <div class=nav-logo><a href="index.html"><img src="img/logo.png" alt=""><h1>TREE MEISTER DESIGNS</h1></a></div>
+            <div class=nav-links>
+                <a href="index.html"><p>home</p></a>
+                <a class=nav-active href="about.html"><p>about</p></a>
+                <a href="contact.html"><p>contact</p></a>
+                <a target=_blank href="https://etsy.me/3eWZcdj"><p>shop</p></a>
+            </div>
+        </div>
+    </nav>
+
+    <nav class=mobile-nav>
+        <div class=nav-container>
+            <div class=nav-logo><a href=index.html><img src="img/logo.png" alt=""></a></div>
+            <div><p class=burger>X</p></div>
+        </div>
+        <div class=nav-drop>
+            <div class=nav-links>
+                <a href="index.html"><p>home</p></a>
+                <a class=nav-active href="about.html"><p>about</p></a>
+                <a href="contact.html"><p>contact</p></a>
+                <a target=_blank href="https://etsy.me/3eWZcdj"><p>shop</p></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class=contact-container>
+        <h1>For custom work, contact and more, email me at [email], or DM me on <a><span>Etsy</span></a>!</h1>
+    </div>
+
+
+
+    <footer>
+        <div>
+            <img class=footer-logo src="img/logo.png" alt=""><p class=footer-title> Tree Meister<br> Designs</p>
+        </div>
+    
+        <div>
+            <a target=_blank href="https://instagram.com/tree_meister_designs"><img class=footer-icon src="img/ig.png" alt=""></a>
+            <a target=_blank href="https://etsy.me/3eWZcdj"><img class=footer-icon src="img/etsy.png" alt=""></a>
+            <a href="mailto:"><img class=footer-icon src="img/email.png" alt=""></a>
+        </div>
+    
+        <div>
+            <p>&copy; Tree Meister Designs 2021<br><br>Made by <a class=oblique href=https://adamuniver.se target=_blank>adamuniver.se</a> at <a class=oblique href=https://obliqueco.com target=_blank>Oblique</a>.
+            </p>
+        </div>
+    
+    </footer>
+
+
+</body>
+
+
+
+
+<script src="js/rellax.js"></script>
+<script>
+  // Accepts any class name
+  var rellax = new Rellax('.rellax');
+</script>
+
+
+<script>
+$(function() {
+  $('.burger').click(function() {
+    $(".nav-drop").toggleClass('open');
+  });
+});
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".desktop-nav");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".mobile-nav .nav-container");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".nav-logo a h1");
+    $nav.toggleClass('show', $(this).scrollTop() > $nav.height());
+  });
+});
+</script>
+</html>
