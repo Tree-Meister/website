@@ -328,6 +328,7 @@ button:hover {
         -ms-flex-align: center;
             align-items: center;
     padding: 5%;
+    text-align: center;
   }
   footer {
     width: 100%;
