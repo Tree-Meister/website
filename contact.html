@@ -26,7 +26,11 @@
     <nav class=mobile-nav>
         <div class=nav-container>
             <div class=nav-logo><a href=index.html><img src="img/logo.png" alt=""></a></div>
-            <div><p class=burger>X</p></div>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
         </div>
         <div class=nav-drop>
             <div class=nav-links>
@@ -77,8 +81,9 @@
 
 <script>
 $(function() {
-  $('.burger').click(function() {
+  $('.hamburger').click(function() {
     $(".nav-drop").toggleClass('open');
+    $(".hamburger").toggleClass("active");
   });
 });
 

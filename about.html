@@ -26,7 +26,11 @@
     <nav class=mobile-nav>
         <div class=nav-container>
             <div class=nav-logo><a href=index.html><img src="img/logo.png" alt=""></a></div>
-            <div><p class=burger>X</p></div>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
         </div>
         <div class=nav-drop>
             <div class=nav-links>
@@ -38,8 +42,34 @@
         </div>
     </nav>
 
-    <div class=contact-container>
-        <h1>For custom work, contact and more, email me at [email], or DM me on <a><span>Etsy</span></a>!</h1>
+    <div class=about-container>
+      <h1>ABOUT</h1>
+        <div class=about-1>
+          <h3>Tree Meister Designs</h3>
+          <div><img src="img/moon.jpg" alt=""></div>
+          <div><p>Tree Meister Designs is a design initiative rooted in a love for trees. The infinite beauty of the natural world is often easy to miss, that's why it's my goal to bring it center stage. With topographic and bathymetric data, I create 3D paper maps of the landforms we have come to hold so close to our hearts. To pay homage to the beautiful trees that give us life, I make heirloom quality furniture and put wood on wheels.
+            <br><br>
+            <strong>Trees</strong> are the counterpart to our <strong>lungs</strong>, making our very existence possible. Protecting trees is important to me, especially in this era of rapid deforestation. Rainforests in particular, which host up to 50% of terrestrial biodiversity, are being decimated at astronomical levels, which is why a portion of every sale goes toward planting at least two trees in the Amazon rainforest.
+            
+            
+            <br><br>
+            Through changing the way we interact with nature, we may gain the perspective we need to protect it. 
+            
+            </p></div>
+        </div>
+
+        <div class=about-2>
+          <h3>Steve Mueller</h3>
+          <div><img src="img/steve.png" alt=""></div>
+          <div><p>Hey I'm Steve, I design and make the stuff! 
+            <br><br>
+            With an eye for simplicity and nature's bountiful beauty, I create pieces of art that intersect organic and geometric forms. I draw my inspiration from my world travels, walks in the woods, and Wes Anderson.
+            <br><br>
+            I tend to gravitate toward minimal, clean designs, which is rooted in a strong belief that less is more. I love experimenting with color, texture, wood species, and the organic remains of formerly existing critters.
+            <br><br>
+            When my hands aren't busy creating, you can find me skiing and boarding in the Rockies, soaking in the sunsets from my balcony, or filling my passport with as many stamps as will fit.</p></div>
+        </div>
+
     </div>
 
 
@@ -77,8 +107,9 @@
 
 <script>
 $(function() {
-  $('.burger').click(function() {
+  $('.hamburger').click(function() {
     $(".nav-drop").toggleClass('open');
+    $(".hamburger").toggleClass("active");
   });
 });
 
